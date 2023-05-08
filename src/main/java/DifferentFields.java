@@ -1,12 +1,12 @@
 import dto.CountryDto;
-import mapper.CountryMapper;
+import mapper.DifferentFieldMapper;
 import model.Country;
 import org.mapstruct.factory.Mappers;
 
 public class DifferentFields {
 
     public static void main(String[] args) {
-        CountryMapper mapper = Mappers.getMapper(CountryMapper.class);
+        DifferentFieldMapper mapper = Mappers.getMapper(DifferentFieldMapper.class);
         CountryDto countryDto = new CountryDto();
 
         countryDto.setName("DR Congo");

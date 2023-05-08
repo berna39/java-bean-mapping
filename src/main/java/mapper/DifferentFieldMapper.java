@@ -6,7 +6,9 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 @Mapper
-public interface CountryMapper {
+public interface DifferentFieldMapper {
+
+    // Mapping with different field name
 
     @Mapping(target = "continent", source = "countryDto.region")
     Country countryDtoToCountry(CountryDto countryDto);
