@@ -31,4 +31,13 @@ public class TodoDto {
     public void setStatus(Status status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "TodoDto{" +
+                "title='" + title + '\'' +
+                ", detail='" + detail + '\'' +
+                ", status=" + status +
+                '}';
+    }
 }
